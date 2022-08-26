@@ -218,10 +218,11 @@ a:hover{text-decoration:underline;}
     display:table-row;
 }
 #header {
-	max-width: 1170px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 50px 20px 45px;
 	position:relative;
+
 }
 .menu_trigger{
 	width: 31px;
@@ -301,6 +302,18 @@ a:hover{text-decoration:underline;}
 	width: 100%;
 	position: relative;
 	margin: 0 0 40px;
+}
+
+.ganes{
+	font:bold 80px/90px 'novecentosanswide', Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.ganes:hover{
+	text-decoration: none;
+}
+.logo-ganes{
+	width: 500px;
+	height: 170px;
 }
 .bg {
 	position: absolute;
@@ -823,7 +836,7 @@ div.selector select {
     width:100%;
     overflow:hidden;
     display:table-footer-group;
-    background:rgb(187, 8, 8);
+    background:rgb(165, 19, 19);
 }
 #footer .footer-holder {
     height:1%;
