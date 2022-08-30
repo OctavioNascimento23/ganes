@@ -260,7 +260,7 @@ a:hover{text-decoration:underline;}
 }
 #nav ul li {
 	float: left;
-	padding: 0 0 0 65px;
+	padding: 0 0 0 71px;
 }
 #nav ul a {
 	color: #6e6e6e;
@@ -304,13 +304,7 @@ a:hover{text-decoration:underline;}
 	margin: 0 0 40px;
 }
 
-.ganes{
-	font:bold 80px/90px 'novecentosanswide', Arial, Helvetica, sans-serif;
-	color: #000000;
-}
-.ganes:hover{
-	text-decoration: none;
-}
+
 .logo-ganes{
 	width: 500px;
 	height: 170px;
