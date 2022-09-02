@@ -220,7 +220,7 @@ a:hover{text-decoration:underline;}
 #header {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 50px 20px 45px;
+	padding: 10px 20px 45px;
 	position:relative;
 
 }
@@ -562,7 +562,7 @@ div.selector select {
 .bar {
 	width: 100%;
 	margin: 0 0 10px;
-	background: #444;
+	background: rgb(0, 0, 0);
 }
 .bar-frame {
 	max-width: 1170px;
@@ -830,7 +830,7 @@ div.selector select {
     width:100%;
     overflow:hidden;
     display:table-footer-group;
-    background:rgb(165, 19, 19);
+    background:rgb(158, 0, 0);
 }
 #footer .footer-holder {
     height:1%;
@@ -840,7 +840,7 @@ div.selector select {
 .footer-content {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 45px 20px 20px;
+	padding: 20px 20px 0px;
 	color: #ffffff;
 }
 #footer a {color:  #ffffff;}
@@ -909,6 +909,15 @@ div.selector select {
 	padding: 20px 20px;
 	font-size: 14px;
 	line-height: 16px;
+}
+
+.quem{
+	width: 100%;
+	justify-content: space-around;
+	padding-top: 40px;
+	display: flex;
+	font:80px/80px 'novecento_sans_widemedium', Arial, Helvetica, sans-serif;
+	color: #000000;
 }
 @media (-webkit-min-device-pixel-ratio:2) ,(min--moz-device-pixel-ratio:2),(-o-min-device-pixel-ratio:2/1),(min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx){
 	.logo{
