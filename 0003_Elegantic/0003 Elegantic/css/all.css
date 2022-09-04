@@ -919,6 +919,78 @@ div.selector select {
 	font:80px/80px 'novecento_sans_widemedium', Arial, Helvetica, sans-serif;
 	color: #000000;
 }
+.quem2{
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.quem3{
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.missao{
+	width: 301px;
+	height: 190px;
+	font:30px/30px 'novecento_sans_widemedium', Arial, Helvetica, sans-serif;
+	display: flex;
+	text-align: center;
+	color: #000000;
+	border-radius: 5%; 
+	background-color: #e4e4e4;
+}
+.visao{
+	width: 288px;
+	height: 280px;
+	font:30px/30px 'novecento_sans_widemedium', Arial, Helvetica, sans-serif;
+	display: flex;
+	text-align: center;
+	color: black;
+	border-radius: 5%; 
+	background-color: #e4e4e4;
+}
+.valores{
+	width: 360px;
+	height: 160px;
+	font:30px/30px 'novecento_sans_widemedium', Arial, Helvetica, sans-serif;
+	display: flex;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	border-radius: 5%;
+	background-color: #e4e4e4;
+}
+.missao2{
+	width: 300px;
+	display: flex;
+	justify-content: center;
+}
+.visao2{
+	width: 250px;
+	display: flex;
+	justify-content: center;
+}
+.valores2{
+	width: 360px;
+	display: flex;
+	justify-content: center;
+}
+.missao_foto{
+	width: 150px;
+	height: 150px;
+}
+.visao_foto{
+	width: 100px;
+	height: 100px;
+}
+.valores_foto{
+	width: 100px;
+	height: 100px;
+}
+
 @media (-webkit-min-device-pixel-ratio:2) ,(min--moz-device-pixel-ratio:2),(-o-min-device-pixel-ratio:2/1),(min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx){
 	.logo{
 		background:url(../images/logo@x2.png) no-repeat;
