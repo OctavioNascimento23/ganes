@@ -8,11 +8,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Elegantic</title>
-	<link rel="stylesheet" href="css/fancySelect.css" />
-	<link rel="stylesheet" href="css/uniform.css" />
-	<link rel="stylesheet" href="css/all.css" />
-	<link rel="stylesheet" href="css/estiloPersonalizado.css" />
-	<link media="screen" rel="stylesheet" type="text/css" href="css/screen.css" />
+	<link rel="stylesheet" href="../css/fancySelect.css" />
+	<link rel="stylesheet" href="../css/uniform.css" />
+	<link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/estiloPersonalizado.css" />
+	<link media="screen" rel="stylesheet" type="text/css" href="../css/screen.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -21,24 +21,24 @@
 	<div id="wrapper">
 		<div class="wrapper-holder">
 			<header id="header">
-				<span ><a  href="index.html"><img class="logo-ganes"src="images/logoganes.png" alt="ganes"></a></span>
+				<span ><a  href="index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
-					<li class="items"><a href="cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
+					<li class="items"><a href="cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
 				</ul>
 				<div class="bar-holder">
 				<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul>
-							<li><a href="PaginasProd/romance.html" class="tirarLink"><span class="btn white normal">Romance</span></a></li>
-							<li><a href="PaginasProd/ficcao.html" class="tirarLink"><span class="btn white normal">Ficção</span></a></li>
-							<li><a href="PaginasProd/drama.html" class="tirarLink"><span class="btn white normal">Drama</span></a></li>
-							<li><a href="PaginasProd/politica.html" class="tirarLink"><span class="btn white normal">Política</span></a></li>
-							<li><a href="PaginasProd/fantasia.html" class="tirarLink"><span class="btn white normal">Fantasia</span></a></li>
+							<li><a href="../PaginasProd/romance.php" class="tirarLink"><span class="btn white normal">Romance</span></a></li>
+							<li><a href="../PaginasProd/ficcao.php" class="tirarLink"><span class="btn white normal">Ficção</span></a></li>
+							<li><a href="../PaginasProd/drama.php" class="tirarLink"><span class="btn white normal">Drama</span></a></li>
+							<li><a href="../PaginasProd/politica.php" class="tirarLink"><span class="btn white normal">Política</span></a></li>
+							<li><a href="../PaginasProd/fantasia.php" class="tirarLink"><span class="btn white normal">Fantasia</span></a></li>
 						</ul>
 					</nav>
 					<ul class="tools-nav">
-						<li class="items"><a href="cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
+						<li class="items"><a href="cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 						<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
 					</ul>
 				</div>
@@ -46,7 +46,7 @@
 			<section class="bar">
 				<div class="bar-frame">
 					<ul class="breadcrumbs">
-						<li><a href="index.html">Menu</a></li>
+						<li><a href="index.php">Menu</a></li>
 						<li>Carrinho</li>
 					</ul>
 				</div>
@@ -55,7 +55,7 @@
 				<ul class="list-table">
 					<li>
 						<div class="rows rows-item">
-							<img src="images/img-item-02-small.jpg" height="99" width="99" alt="" />
+							<img src="../images/img-item-02-small.jpg" height="99" width="99" alt="" />
 							<h3>deserunt mollitia</h3>
 						</div>
 						<div class="rows-holder">
@@ -88,7 +88,7 @@
 					</li>
 					<li>
 						<div class="rows rows-item">
-							<img src="images/img-item-05-small.jpg" height="99" width="99" alt="" />
+							<img src="../images/img-item-05-small.jpg" height="99" width="99" alt="" />
 							<h3>labore et dolore</h3>
 						</div>
 						<div class="rows-holder">
@@ -188,59 +188,18 @@
 				</form>
 			</section>
 		</div>
-		<footer id="footer">
-			<div class="footer-holder">
-				<div class="footer-frame">
-					<div class="footer-content">
-						<div class="col-holder">
-							<div class="col">
-								<div class="heading">
-									<h3>Quem somos?</h3>
-								</div>
-								<p>GANES é uma empresa de venda de livros e ebooks, com a intenção de facilitar o atendimento dos clientes. Queremos propagar a importancia e a diversão da leitura para as pessoas.</p>
-							</div>
-							<div class="col">
-								<div class="heading">
-									<h3>Contatos</h3>
-								</div>
-								<address>
-									<p><strong>GANES</strong></p>
-									<p>Rua Pastor Hugo Gegembauer, 265</p>
-									<p>Hortolândia - SP</p>
-								</address>
-								<address>
-									<p>(+55) 19 999695358</p>
-									<p>ganescorporation@gmail.com</p>
-								</address>
-							</div>
-							<div class="col col-contact">
-								<div class="heading">
-									<h3>Redes Sociais</h3>
-								</div>
-								<ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="google"><a href="#">Google+</a></li>
-									<li class="twitter"><a href="#">Twitter</a></li>
-									<li class="pinterest"><a href="#">Pinterest</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer-bottom">
-						<div class="holder">
-							<p>Copyright 2022 GANES. All rights reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>		
+
+		<?php
+		include'../components/footer.php'
+		?>	
+		
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
-	<script type="text/javascript" src="js/fancySelect.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="../js/fancySelect.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

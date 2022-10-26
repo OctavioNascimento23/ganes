@@ -1,3 +1,12 @@
+<?php
+    include'../connect.php';
+    
+    $s="select*from reg where id='$_SESSION[id]'";
+    $qu= mysqli_query($con, $s);
+    $f=mysqli_fetch_assoc($qu);
+    
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
@@ -8,11 +17,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Ganes</title>
-	<link rel="stylesheet" href="css/fancySelect.css" />
-	<link rel="stylesheet" href="css/uniform.css" />
-	<link rel="stylesheet" href="css/all.css" />
-	<link rel="stylesheet" href="css/estiloPersonalizado.css" />
-	<link media="screen" rel="stylesheet" type="text/css" href="css/screen.css" />
+	<link rel="stylesheet" href="../css/fancySelect.css" />
+	<link rel="stylesheet" href="../css/uniform.css" />
+	<link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/estiloPersonalizado.css" />
+	<link media="screen" rel="stylesheet" type="text/css" href="../css/screen.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -21,7 +30,7 @@
 	<div id="wrapper">
 		<div class="wrapper-holder">
 			<header id="header">
-				<span ><a  href="index.html"><img class="logo-ganes"src="./images/logoganes.png" alt="ganes"></a></span>
+				<span ><a  href="index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					
 					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
@@ -30,21 +39,21 @@
 				<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html" class="tirarLink"><span class="btn black normal">MENU</span></a></li>
-							<li><a href="products.html" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
+							<li><a href="index.php" class="tirarLink"><span class="btn black normal">MENU</span></a></li>
+							<li><a href="products.php" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
 							<li><a href="#" class="tirarLink"><span class="btn white normal">EBOOKS</span></a></li>
-							<li><a href="quem_somos.html" class="tirarLink"><span class="btn white normal">QUEM SOMOS?</span></a></li>
+							<li><a href="quem_somos.php" class="tirarLink"><span class="btn white normal">QUEM SOMOS?</span></a></li>
 						</ul>
 					</nav>
 					<ul class="tools-nav">
 					
-						<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
+						<li class="login"><a href="login1.php">Login</a> / <a href="#">Registro</a></li>
 					</ul>
 				</div>
 			</header>
 			<section class="promo">
 				<ul class="slider">
-					<li style="background: url(images/slide1.png) no-repeat 50% 50%; height: 500px;">
+					<li style="background: url(../images/slide1.png) no-repeat 50% 50%; height: 500px;">
 						<div class="slide-holder">
 							<div class="slide-info">
 								<h1></h1>
@@ -52,7 +61,7 @@
 							</div>
 						</div>
 					</li>
-					<li style="background: url(images/slide2.png) no-repeat 50% 50%; height: 500px;">
+					<li style="background: url(../images/slide2.png) no-repeat 50% 50%; height: 500px;">
 						<div class="slide-holder">
 							<div class="slide-info">
 								<h1></h1>
@@ -60,7 +69,7 @@
 							</div>
 						</div>
 					</li>
-					<li style="background: url(images/slide3.png) no-repeat 50% 50%; height: 500px;">
+					<li style="background: url(../images/slide3.png) no-repeat 50% 50%; height: 500px;">
 						<div class="slide-holder">
 							<div class="slide-info">
 								<h1></h1>
@@ -73,9 +82,9 @@
 			<section id="main">
 				<div class="boxes">
 					<div class="box">
-						<a href="Ofertas.html">
+						<a href="Ofertas.php">
 							<span class="bg"></span>
-							<img src="images/heartstopper.jpg" alt="" />
+							<img src="../imagensLivros/heartstopper.jpg" alt="" />
 							<div class="box-info">
 								<div class="box-info-holder">
 									<span class="title"><span>Promoção</span></span>
@@ -86,9 +95,9 @@
 						</a>
 					</div>
 					<div class="box">
-						<a href="Lancamentos.html">
+						<a href="Lancamentos.php">
 							<span class="bg"></span>
-							<img src="images/amante.jpg" alt="" />
+							<img src="../imagensLivros/todasAsImperfeicoes.jpg" alt="" />
 							<div class="box-info">
 								<div class="box-info-holder">
 									<span class="title"><span>Lançamentos</span></span>
@@ -99,9 +108,9 @@
 						</a>
 					</div>
 					<div class="box">
-						<a href="Destaques.html">
+						<a href="Destaques.php">
 							<span class="bg"></span>
-							<img src="images/harry.jpg" alt="" />
+							<img src="../imagensLivros/harrypotter.jpg" alt="" />
 							<div class="box-info">
 								<div class="box-info-holder">
 									<span class="title"><span>Destaques</span></span>
@@ -126,59 +135,19 @@
 				</div>
 			</section>
 		</div>
-		<footer id="footer">
-			<div class="footer-holder">
-				<div class="footer-frame">
-					<div class="footer-content">
-						<div class="col-holder">
-							<div class="col">
-								<div class="heading">
-									<h3>Quem somos?</h3>
-								</div>
-								<p>GANES é uma empresa de venda de livros e ebooks, com a intenção de facilitar o atendimento dos clientes. Queremos propagar a importancia e a diversão da leitura para as pessoas.</p>
-							</div>
-							<div class="col">
-								<div class="heading">
-									<h3>Contatos</h3>
-								</div>
-								<address>
-									<p><strong>GANES</strong></p>
-									<p>Rua Pastor Hugo Gegembauer, 265</p>
-									<p>Hortolândia - SP</p>
-								</address>
-								<address>
-									<p>(+55) 19 999695358</p>
-									<p>ganescorporation@gmail.com</p>
-								</address>
-							</div>
-							<div class="col col-contact">
-								<div class="heading">
-									<h3>Redes Sociais</h3>
-								</div>
-								<ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="google"><a href="#">Google+</a></li>
-									<li class="twitter"><a href="#">Twitter</a></li>
-									<li class="pinterest"><a href="#">Pinterest</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer-bottom">
-						<div class="holder">
-							<p>Copyright 2022 GANES. All rights reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>	
+
+		<!-- FOOTER -->
+		<?php
+		include'../components/footer.php'
+		?>
+		
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
-	<script type="text/javascript" src="js/fancySelect.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="../js/fancySelect.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

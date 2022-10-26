@@ -8,11 +8,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Ganes</title>
-	<link rel="stylesheet" href="css/fancySelect.css" />
-	<link rel="stylesheet" href="css/uniform.css" />
-	<link rel="stylesheet" href="css/all.css" />
-	<link rel="stylesheet" href="css/estiloPersonalizado.css" />
-	<link media="screen" rel="stylesheet" type="text/css" href="css/screen.css" />
+	<link rel="stylesheet" href="../css/fancySelect.css" />
+	<link rel="stylesheet" href="../css/uniform.css" />
+	<link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/estiloPersonalizado.css" />
+	<link media="screen" rel="stylesheet" type="text/css" href="../css/screen.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -22,7 +22,7 @@
 		<div class="wrapper-holder">
 			<header id="header">
 
-				<span ><a  href="index.html"><img class="logo-ganes"src="./images/logoganes.png" alt="ganes"></a></span>
+				<span ><a  href="index.html"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					
 					<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
@@ -58,13 +58,13 @@
 
 					<div class="quem2">
 						<div class="missao2">
-						<img class="missao_foto" src="./images/missao.png" alt="">
+						<img class="missao_foto" src="../images/missao.png" alt="">
 						</div>
 						<div class="visao2">
-						<img class="visao_foto" src="./images/visao.png" alt="">
+						<img class="visao_foto" src="../images/visao.png" alt="">
 						</div>
 						<div class="valores2">
-						<img class="valores_foto" src="./images/valores.png" alt="">
+						<img class="valores_foto" src="../images/valores.png" alt="">
 						</div>
 					</div>
 					<div class="quem3">
@@ -81,24 +81,16 @@
 
 			</header>
 		</div>	
-		<footer id="footer">
-			<div class="footer-holder">
-				<div class="footer-frame">
-					<div class="footer-bottom">
-						<div class="holder">
-							<p>Copyright 2022 GANES. All rights reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>	
+		<?php
+		include'../components/footer.php'
+		?>	
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
-	<script type="text/javascript" src="js/fancySelect.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="../js/fancySelect.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

@@ -22,24 +22,24 @@
 		<div class="wrapper-holder">
 
 			<header id="header">
-				<span ><a  href="../index.html"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
+				<span ><a  href="../Paginas/index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
-					<li class="items"><a href="../cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
+					<li class="items"><a href="../cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
 				</ul>
 				<div class="bar-holder">
 				<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul>
-							<li><a href="romance.html" class="tirarLink"><span class="btn white normal">Romance</span></a></li>
-							<li><a href="ficcao.html" class="tirarLink"><span class="btn white normal">Ficção</span></a></li>
-							<li><a href="drama.html" class="tirarLink"><span class="btn black normal">Drama</span></a></li>
-							<li><a href="politica.html" class="tirarLink"><span class="btn white normal">Política</span></a></li>
-							<li><a href="fantasia.html" class="tirarLink"><span class="btn white normal">Fantasia</span></a></li>
+							<li><a href="romance.php" class="tirarLink"><span class="btn black normal">Romance</span></a></li>
+							<li><a href="ficcao.php" class="tirarLink"><span class="btn white normal">Ficção</span></a></li>
+							<li><a href="drama.php" class="tirarLink"><span class="btn white normal">Drama</span></a></li>
+							<li><a href="politica.php" class="tirarLink"><span class="btn white normal">Política</span></a></li>
+							<li><a href="fantasia.php" class="tirarLink"><span class="btn white normal">Fantasia</span></a></li>
 						</ul>
 					</nav>
 					<ul class="tools-nav">
-						<li class="items"><a href="../cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
+						<li class="items"><a href="../cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 						<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
 					</ul>
 				</div>
@@ -48,9 +48,9 @@
 			<section class="bar">
 				<div class="bar-frame">
 					<ul class="breadcrumbs">
-						<li><a href="../index.html">Menu</a></li>
-						<li><a href="../products.html">Livros</a></li>
-						<li>Drama</li>
+						<li><a href="../Paginas/index.php">Menu</a></li>
+						<li><a href="../Paginas/products.php">Livros</a></li>
+						<li>Romance</li>
 					</ul>
 				</div>
 			</section>
@@ -71,8 +71,8 @@
 								<img src="../images/img-item-01.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -87,8 +87,8 @@
 								<img src="../images/img-item-02.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -103,8 +103,8 @@
 								<img src="../images/img-item-03.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -119,8 +119,8 @@
 								<img src="../images/img-item-04.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -135,8 +135,8 @@
 								<img src="../images/img-item-05.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -151,8 +151,8 @@
 								<img src="../images/img-item-06.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -167,8 +167,8 @@
 								<img src="../images/img-item-07.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -183,8 +183,8 @@
 								<img src="../images/img-item-08.jpg"  alt="" />
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.html" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.html" class="btn white normal">See details</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
@@ -205,52 +205,11 @@
 				</div>
 			</section>
 		</div>
-		<footer id="footer">
-			<div class="footer-holder">
-				<div class="footer-frame">
-					<div class="footer-content">
-						<div class="col-holder">
-							<div class="col">
-								<div class="heading">
-									<h3>Quem somos?</h3>
-								</div>
-								<p>GANES é uma empresa de venda de livros e ebooks, com a intenção de facilitar o atendimento dos clientes. Queremos propagar a importancia e a diversão da leitura para as pessoas.</p>
-							</div>
-							<div class="col">
-								<div class="heading">
-									<h3>Contatos</h3>
-								</div>
-								<address>
-									<p><strong>GANES</strong></p>
-									<p>Rua Pastor Hugo Gegembauer, 265</p>
-									<p>Hortolândia - SP</p>
-								</address>
-								<address>
-									<p>(+55) 19 999695358</p>
-									<p>ganescorporation@gmail.com</p>
-								</address>
-							</div>
-							<div class="col col-contact">
-								<div class="heading">
-									<h3>Redes Sociais</h3>
-								</div>
-								<ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="google"><a href="#">Google+</a></li>
-									<li class="twitter"><a href="#">Twitter</a></li>
-									<li class="pinterest"><a href="#">Pinterest</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer-bottom">
-						<div class="holder">
-							<p>Copyright 2022 GANES. All rights reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+
+		<?php
+		include'../components/footer.php'
+		?>
+
 	</div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
