@@ -1,3 +1,7 @@
+<?php
+    include'../connect.php';
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
@@ -11,6 +15,7 @@
 	<link rel="stylesheet" href="../css/fancySelect.css" />
 	<link rel="stylesheet" href="../css/uniform.css" />
 	<link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/estiloPersonal.css" />
 	<link media="screen" rel="stylesheet" type="text/css" href="../css/screen.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -62,11 +67,19 @@
 						<li class="next"><a href="#">next</a></li>
 					</ul>
 				</div>
+
+				
 				<ul class="item-list">
+				<?php
+                  $sq="select * from livro as l inner join categoria as c on c.idCategoria = l.fk_idCategoria";
+                  $qu=mysqli_query($con,$sq);
+                  while($f=  mysqli_fetch_assoc($qu)){
+              	?>
+
 					<li>
 						<div class="item">
 							<div class="image">
-								<img src="../images/img-item-01.jpg"  alt="" />
+								<img src="<?php echo $f['capaLivro'];?>" alt="SEM IMAGEM"/>
 								<div class="hover">
 									<div class="item-content">
 										<a href="cart.php" class="btn white normal">Add to cart</a>
@@ -75,11 +88,12 @@
 									<span class="bg"></span>
 								</div>
 							</div>
-							<span class="name">cum soluta nobis</span>
-							<span>$250.00</span>
+							<span class="name"><?php echo $f['nomeLivro'];?></span>
+							<span><?php echo $f['precoLivro'];?></span>
 						</div>
 					</li>
-					<li>
+					<?php } ?>
+					<!-- <li>
 						<div class="item">
 							<div class="image">
 								<img src="../images/img-item-02.jpg"  alt="" />
@@ -190,7 +204,7 @@
 							<span class="name">aut reiciendis dolor</span>
 							<span>$250.00</span>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 				<div class="top-bar top-bar-add">
 					<ul class="paging">
