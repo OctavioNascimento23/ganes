@@ -97,7 +97,7 @@
 					<div class="box">
 						<a href="Lancamentos.php">
 							<span class="bg"></span>
-							<img src="../imagensLivros/todasAsImperfeicoes.jpg" alt="" />
+							<img src="../imagensLivros/amante.jpg" alt="" />
 							<div class="box-info">
 								<div class="box-info-holder">
 									<span class="title"><span>Lançamentos</span></span>
