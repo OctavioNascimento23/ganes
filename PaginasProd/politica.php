@@ -1,3 +1,7 @@
+<?php
+    include'../connect.php';
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
@@ -55,153 +59,35 @@
 				</div>
 			</section>
 			<section id="main">
-				<div class="top-bar">
-					<ul class="paging">
-						<li class="prev"><a href="#">prev</a></li>
-						<li><a href="#">1</a></li>
-						<li class="active"><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="next"><a href="#">next</a></li>
-					</ul>
-				</div>
+				
 				<ul class="item-list">
+					<?php
+                  $sq="SELECT * FROM `livro` WHERE fk_idCategoria=4";
+                  $qu=mysqli_query($con,$sq);
+                  while($f=  mysqli_fetch_assoc($qu)){
+              	?>
+
 					<li>
 						<div class="item">
 							<div class="image">
-								<img src="../images/img-item-01.jpg"  alt="" />
+								<img src="../<?php echo $f['capaLivro'];?>" alt="SEM IMAGEM"/>
 								<div class="hover">
 									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
+										<a href="cart.php" class="btn white normal">Add to cart</a>
+										<a href="singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
 							</div>
-							<span class="name">cum soluta nobis</span>
-							<span>$250.00</span>
+							<span class="name"><?php echo $f['nomeLivro'];?></span>
+							<span><?php echo $f['precoLivro'];?></span>
 						</div>
 					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-02.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">deserunt mollitias</span>
-							<span>$399.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-03.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">cumque nihil impedit</span>
-							<span>$299.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-04.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">maxime placeat facere</span>
-							<span>$450.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-05.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">omnis dolor</span>
-							<span>$200.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-06.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">sunt in culpa qui </span>
-							<span>$120.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-07.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">optio cumque nihil</span>
-							<span>$499.00</span>
-						</div>
-					</li>
-					<li>
-						<div class="item">
-							<div class="image">
-								<img src="../images/img-item-08.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="../cart.php" class="btn white normal">Add to cart</a>
-										<a href="../singleproduct.php" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
-							<span class="name">aut reiciendis dolor</span>
-							<span>$250.00</span>
-						</div>
-					</li>
+					<?php } ?>
+					
 				</ul>
 				<div class="top-bar top-bar-add">
-					<ul class="paging">
-						<li class="prev"><a href="#">prev</a></li>
-						<li><a href="#">1</a></li>
-						<li class="active"><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="next"><a href="#">next</a></li>
-					</ul>
+					
 				</div>
 			</section>
 		</div>

@@ -22,7 +22,7 @@
 		<div class="wrapper-holder">
 			<header id="header">
 
-				<span ><a  href="index.html"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
+				<span ><a  href="index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					
 					<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
@@ -31,10 +31,10 @@
 					<a class="menu_trigger" href="#">menu</a>
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html" class="tirarLink"><span class="btn white normal">MENU</span></a></li>
-								<li><a href="products.html" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
+								<li><a href="index.php" class="tirarLink"><span class="btn white normal">MENU</span></a></li>
+								<li><a href="products.php" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
 								<li><a href="#" class="tirarLink"><span class="btn white normal">EBOOKS</span></a></li>
-								<li><a href="quem_somos.html" class="tirarLink"><span class="btn black normal">QUEM SOMOS?</span></a></li>
+								<li><a href="quem_somos.php" class="tirarLink"><span class="btn black normal">QUEM SOMOS?</span></a></li>
 							</ul>
 						</nav>
 						<ul class="tools-nav">

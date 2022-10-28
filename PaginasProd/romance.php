@@ -59,15 +59,7 @@
 				</div>
 			</section>
 			<section id="main">
-				<div class="top-bar">
-					<ul class="paging">
-						<li class="prev"><a href="#">prev</a></li>
-						<li><a href="#">1</a></li>
-						<li class="active"><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="next"><a href="#">next</a></li>
-					</ul>
-				</div>
+				
 				<ul class="item-list">
 
 				<?php
@@ -76,20 +68,20 @@
                   while($f=  mysqli_fetch_assoc($qu)){
               	?>
 
-					<li>
+<li>
 						<div class="item">
 							<div class="image">
-								<img src="../<?php echo $f['capaLivro'];?>"  alt="" />
+								<img src="../<?php echo $f['capaLivro'];?>" alt="SEM IMAGEM"/>
 								<div class="hover">
 									<div class="item-content">
-										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
-										<a href="../Paginas/singleproduct.php" class="btn white normal">See details</a>
+										<a href="cart.php" class="btn white normal">Add to cart</a>
+										<a href="singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
 								</div>
 							</div>
-							<span class="name">cum soluta nobis</span>
-							<span>$250.00</span>
+							<span class="name"><?php echo $f['nomeLivro'];?></span>
+							<span><?php echo $f['precoLivro'];?></span>
 						</div>
 					</li>
 					<?php } ?>
@@ -207,13 +199,7 @@
 					</li> -->
 				</ul> 
 				<div class="top-bar top-bar-add">
-					<ul class="paging">
-						<li class="prev"><a href="#">prev</a></li>
-						<li><a href="#">1</a></li>
-						<li class="active"><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="next"><a href="#">next</a></li>
-					</ul>
+					
 				</div>
 			</section>
 		</div>

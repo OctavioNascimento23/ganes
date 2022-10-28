@@ -58,15 +58,15 @@
 				</div>
 			</section>
 			<section id="main">
-				<div class="top-bar">
-					<ul class="paging">
-						<li class="prev"><a href="#">prev</a></li>
-						<li class="active"><a href="products.php">1</a></li>
+				<div class="top-bar top-bar-add">
+				<ul class="paging">
+					<li class="prev"><a href="products copy 3.php">prev</a></li>
+						<li><a href="products.php">1</a></li>
 						<li><a href="products copy.php">2</a></li>
 						<li><a href="products copy 2.php">3</a></li>
 						<li><a href="products copy 3.php">4</a></li>
-						<li><a href="products copy 4.php">5</a></li>
-						<li class="next"><a href="products copy.php">next</a></li>
+						<li class="active"><a href="products copy 4.php">5</a></li>
+						<li class="next"><a href="#">next</a></li>
 					</ul>
 				</div>
 
@@ -74,7 +74,7 @@
 				<ul class="item-list">
 				<?php
                   $sq="SELECT * FROM livro
-				  WHERE idLivro BETWEEN 1 AND 8;";
+				  WHERE idLivro BETWEEN 33 AND 40;";
                   $qu=mysqli_query($con,$sq);
                   while($f=  mysqli_fetch_assoc($qu)){
               	?>
@@ -211,13 +211,13 @@
 				</ul>
 				<div class="top-bar top-bar-add">
 				<ul class="paging">
-					<li class="prev"><a href="#">prev</a></li>
-						<li class="active"><a href="products.php">1</a></li>
+					<li class="prev"><a href="products copy 3.php">prev</a></li>
+						<li><a href="products.php">1</a></li>
 						<li><a href="products copy.php">2</a></li>
 						<li><a href="products copy 2.php">3</a></li>
 						<li><a href="products copy 3.php">4</a></li>
-						<li><a href="products copy 4.php">5</a></li>
-						<li class="next"><a href="products copy.php">next</a></li>
+						<li class="active"><a href="products copy 4.php">5</a></li>
+						<li class="next"><a href="#">next</a></li>
 					</ul>
 				</div>
 			</section>
