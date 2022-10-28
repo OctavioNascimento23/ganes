@@ -1,3 +1,7 @@
+<?php
+    include'../connect.php';
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
@@ -65,10 +69,17 @@
 					</ul>
 				</div>
 				<ul class="item-list">
+
+				<?php
+                  $sq="SELECT * FROM `livro` WHERE fk_idCategoria=1";
+                  $qu=mysqli_query($con,$sq);
+                  while($f=  mysqli_fetch_assoc($qu)){
+              	?>
+
 					<li>
 						<div class="item">
 							<div class="image">
-								<img src="../images/img-item-01.jpg"  alt="" />
+								<img src="../<?php echo $f['capaLivro'];?>"  alt="" />
 								<div class="hover">
 									<div class="item-content">
 										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
@@ -81,7 +92,8 @@
 							<span>$250.00</span>
 						</div>
 					</li>
-					<li>
+					<?php } ?>
+					<!-- <li>
 						<div class="item">
 							<div class="image">
 								<img src="../images/img-item-02.jpg"  alt="" />
@@ -192,8 +204,8 @@
 							<span class="name">aut reiciendis dolor</span>
 							<span>$250.00</span>
 						</div>
-					</li>
-				</ul>
+					</li> -->
+				</ul> 
 				<div class="top-bar top-bar-add">
 					<ul class="paging">
 						<li class="prev"><a href="#">prev</a></li>
