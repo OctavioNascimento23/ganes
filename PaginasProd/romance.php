@@ -28,7 +28,7 @@
 			<header id="header">
 				<span ><a  href="../Paginas/index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
-					<li class="items"><a href="../cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
+					<li class="items"><a href="../Paginas/cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
 				</ul>
 				<div class="bar-holder">
@@ -43,7 +43,7 @@
 						</ul>
 					</nav>
 					<ul class="tools-nav">
-						<li class="items"><a href="../cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
+						<li class="items"><a href="../Paginas/cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
 						<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
 					</ul>
 				</div>
@@ -74,7 +74,7 @@
 								<img src="../<?php echo $f['capaLivro'];?>" alt="SEM IMAGEM"/>
 								<div class="hover">
 									<div class="item-content">
-										<a href="cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
 										<a href="singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>

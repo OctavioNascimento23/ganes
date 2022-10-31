@@ -73,7 +73,7 @@
 								<img src="../<?php echo $f['capaLivro'];?>" alt="SEM IMAGEM"/>
 								<div class="hover">
 									<div class="item-content">
-										<a href="cart.php" class="btn white normal">Add to cart</a>
+										<a href="../Paginas/cart.php" class="btn white normal">Add to cart</a>
 										<a href="singleproduct.php" class="btn white normal">See details</a>
 									</div>
 									<span class="bg"></span>
