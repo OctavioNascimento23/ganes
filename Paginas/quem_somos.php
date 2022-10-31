@@ -33,7 +33,7 @@
 							<ul>
 								<li><a href="index.php" class="tirarLink"><span class="btn white normal">MENU</span></a></li>
 								<li><a href="products.php" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
-								<li><a href="#" class="tirarLink"><span class="btn white normal">EBOOKS</span></a></li>
+								<li><a href="ebook.php" class="tirarLink"><span class="btn white normal">EBOOKS</span></a></li>
 								<li><a href="quem_somos.php" class="tirarLink"><span class="btn black normal">QUEM SOMOS?</span></a></li>
 							</ul>
 						</nav>

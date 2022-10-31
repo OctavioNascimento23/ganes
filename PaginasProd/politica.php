@@ -52,7 +52,7 @@
 			<section class="bar">
 				<div class="bar-frame">
 					<ul class="breadcrumbs">
-						<li><a href="../index.php">Menu</a></li>
+						<li><a href="../Paginas/index.php">Menu</a></li>
 						<li><a href="../products.php">Livros</a></li>
 						<li>Política</li>
 					</ul>
