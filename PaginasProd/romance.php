@@ -29,7 +29,7 @@
 				<span ><a  href="../Paginas/index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					<li class="items"><a href="../Paginas/cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
-					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
+					<li class="login"><a href="../Paginas/login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 				</ul>
 				<div class="bar-holder">
 				<a class="menu_trigger" href="#">menu</a>
@@ -44,7 +44,7 @@
 					</nav>
 					<ul class="tools-nav">
 						<li class="items"><a href="../Paginas/cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
-						<li class="login"><a href="#">Login</a> / <a href="#">Registro</a></li>
+						<li class="login"><a href="../Paginas/login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 					</ul>
 				</div>
 			</header>

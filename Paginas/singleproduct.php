@@ -24,7 +24,7 @@
 				<span class="logo"><a href="index.php">Elegantic</a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					<li class="items"><a href="cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
-					<li class="login"><a href="login1.php">Login</a> / <a href="#">register</a></li>
+					<li class="login"><a href="login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 				</ul>
 				<a class="menu_trigger" href="#">menu</a>
 				<div class="bar-holder">
@@ -39,7 +39,7 @@
 					</nav>
 					<ul class="tools-nav">
 						<li class="items"><a href="cart.php"><span>2</span> Items, <strong>$599.00</strong></a></li>
-						<li class="login"><a href="login1.php">Login</a> / <a href="#">register</a></li>
+						<li class="login"><a href="login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 					</ul>
 				</div>
 			</header>

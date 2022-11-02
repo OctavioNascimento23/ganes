@@ -1,6 +1,5 @@
 <?php
     include'../connect.php';
-	include'../checkLogin.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,13 +32,12 @@
 						
 					<?php
 
-						$sqlCity = mysqli_query($con, "select username from reg");
-
-						while ($item = mysqli_fetch_assoc($sqlCity)) {
-							$idItem = utf8_encode($item['username']);
+						$s="select*from reg where id='$_SESSION[id]'";
+						$qu= mysqli_query($con, $s);
+						$f=mysqli_fetch_assoc($qu);
 							
-							echo "Bom dia, " . $idItem;
-						}
+							echo "Bom dia, " . $f['username'];
+						
 						?>
 
 					</li>
@@ -48,25 +46,24 @@
 				<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul>
-							<li><a href="indexLogado.php" class="tirarLink"><span class="btn white normal">MENU</span></a></li>
+							<li><a href="indexLogado.php" class="tirarLink"><span class="btn black normal">MENU</span></a></li>
 							<li><a href="productsLogado.php" class="tirarLink"><span class="btn white normal">LIVROS</span></a></li>
-							<li><a href="ebookLogado.php" class="tirarLink"><span class="btn black normal">EBOOKS</span></a></li>
+							<li><a href="ebookLogado.php" class="tirarLink"><span class="btn white normal">EBOOKS</span></a></li>
 							<li><a href="quem_somosLogado.php" class="tirarLink"><span class="btn white normal">QUEM SOMOS?</span></a></li>
 						</ul>
 					</nav>
 					<ul class="tools-nav">
 					
 						<li class="login">
-							
+
 						<?php
 
-						$sqlCity = mysqli_query($con, "select username from reg where id='$_SESSION[id]");
-
-						while ($item = mysqli_fetch_assoc($sqlCity)) {
-							$idItem = utf8_encode($item['username']);
+						$s="select*from reg where id='$_SESSION[id]'";
+						$qu= mysqli_query($con, $s);
+						$f=mysqli_fetch_assoc($qu);
 							
-							echo "Bom dia, " . $idItem;
-						}
+							echo "Bom dia, " . $f['username'];
+						
 						?>
 
 						</li>

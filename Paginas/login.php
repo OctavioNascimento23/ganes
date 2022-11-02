@@ -95,7 +95,7 @@ if(isset($_POST['sub'])){
         <a href="forgot-password.html">I forgot my password</a>
       </p>
       <p class="mb-0">
-        <a href="reg.php" class="text-center">Register a new membership</a>
+        <a href="reg.php" class="text-center">Cadastrar a new membership</a>
       </p>
     </div>
     <!-- /.login-card-body -->

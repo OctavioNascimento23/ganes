@@ -33,13 +33,12 @@
 						
 					<?php
 
-						$sqlCity = mysqli_query($con, "select username from reg");
-
-						while ($item = mysqli_fetch_assoc($sqlCity)) {
-							$idItem = utf8_encode($item['username']);
+						$s="select*from reg where id='$_SESSION[id]'";
+						$qu= mysqli_query($con, $s);
+						$f=mysqli_fetch_assoc($qu);
 							
-							echo "Bom dia, " . $idItem;
-						}
+							echo "Bom dia, " . $f['username'];
+						
 						?>
 
 					</li>
@@ -60,14 +59,13 @@
 								
 							<?php
 
-						$sqlCity = mysqli_query($con, "select username from reg");
+							$s="select*from reg where id='$_SESSION[id]'";
+							$qu= mysqli_query($con, $s);
+							$f=mysqli_fetch_assoc($qu);
+								
+								echo "Bom dia, " . $f['username'];
 
-						while ($item = mysqli_fetch_assoc($sqlCity)) {
-							$idItem = utf8_encode($item['username']);
-							
-							echo "Bom dia, " . $idItem;
-						}
-						?>
+							?>
 
 							</li>
 						</ul>
