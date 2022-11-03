@@ -25,7 +25,7 @@
 				<span ><a  href="index.php"><img class="logo-ganes"src="../images/logoganes.png" alt="ganes"></a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					
-					<li class="login"><a href="#">Login</a> / <a href="#">Cadastrar</a></li>
+					<li class="login"><a href="login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 				</ul>					
 				<div class="bar-holder">
 					<a class="menu_trigger" href="#">menu</a>
@@ -39,7 +39,7 @@
 						</nav>
 						<ul class="tools-nav">
 						
-							<li class="login"><a href="#">Login</a> / <a href="#">Cadastrar</a></li>
+							<li class="login"><a href="login1.php">Login</a> / <a href="#">Cadastrar</a></li>
 						</ul>
 					</div>
 
